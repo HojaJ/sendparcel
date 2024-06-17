@@ -1,0 +1,1 @@
+<img src="{{asset('logo_colo.png')}}" style="height: 50px;">
