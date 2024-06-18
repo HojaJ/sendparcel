@@ -45,7 +45,7 @@ class ParcelsController extends BackendBaseController
         if (auth()->user()->roles->pluck('name')[0] === 'client') {
             $$module_name = $module_model::with('car')->where('user_id', auth()->user()->id);
         } else {
-            $$module_name = $module_model;
+            $$module_name = $module_model::with('car');
         }
 
 

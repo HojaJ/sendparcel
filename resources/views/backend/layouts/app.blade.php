@@ -20,8 +20,10 @@
     <title>@yield('title') | {{ config('app.name') }}</title>
 
     <script src="{{ asset('vendor/jquery/jquery-3.6.4.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/backend.css') }}">
 
-    @vite(['resources/sass/app-backend.scss', 'resources/js/app-backend.js'])
+
+    {{--    @vite(['resources/sass/app-backend.scss', 'resources/js/app-backend.js'])--}}
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Bengali+UI&display=swap" rel="stylesheet" />
@@ -65,7 +67,8 @@
         <!-- / Footer block -->
 
     </div>
-    
+    <script src="{{ asset('js/backend.js') }}"></script>
+
     @stack('after-scripts')
     <!-- / Scripts -->
 

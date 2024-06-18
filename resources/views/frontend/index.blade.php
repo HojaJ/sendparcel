@@ -198,39 +198,6 @@
 
 <section class="contact_section layout_padding">
     <div class="container">
-        <div class="heading_container">
-            <h2>
-                {{__('Request A call back')}}
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <div class="form_container">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="inputName4" placeholder="{{__('First Name')}}">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="inputSubject4" placeholder="{{__('Phone')}}">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="{{ __('Email') }}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inputMessage" placeholder="{{ __('Message') }}">
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="submit" class="">{{ __("Send") }}</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
         <div class="contact_items">
 
             <a href="">
@@ -286,7 +253,6 @@
     </div>
 </section>
 <!-- footer section -->
-
 <footer class="container-fluid footer_section">
     <p>
         Copyright &copy; 2024 {{ __("All Rights Reserved") }}.

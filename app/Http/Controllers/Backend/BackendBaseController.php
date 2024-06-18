@@ -140,10 +140,10 @@ class BackendBaseController extends Controller
                 $diff = Carbon::now()->diffInHours($data->updated_at);
 
                 if ($diff < 25) {
-                    return $data->updated_at->diffForHumans();
+                    return $data->updated_at?->diffForHumans();
                 }
 
-                return $data->updated_at->isoFormat('llll');
+                return $data->updated_at?->isoFormat('llll');
             })
             ->rawColumns(['name', 'action'])
             ->orderColumns(['id'], '-:column $1')
